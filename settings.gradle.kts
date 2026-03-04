@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PrimaAplicatie"
 include(":app")
+include(":playground")
