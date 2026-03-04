@@ -12,6 +12,8 @@ fun main()
 
     //2
 
+
+
     var b: String? = null
     println(b?.length ?: -1)
 
@@ -65,7 +67,6 @@ fun main()
 
     val example = 1
     //example = 3
-
 
 
 
