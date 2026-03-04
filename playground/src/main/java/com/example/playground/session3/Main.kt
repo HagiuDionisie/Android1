@@ -11,7 +11,7 @@ fun main() {
 
     //4
     val fruits = listOf("mar", "banana", "portocala")
-    
+
     println(fruits[1])
 
     //5
