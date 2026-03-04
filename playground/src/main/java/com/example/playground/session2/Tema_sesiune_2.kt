@@ -13,7 +13,7 @@ fun main()
     //2
 
     var b: String? = null
-    println(b?.length)
+    println(b?.length ?: -1)
 
     //3
 
