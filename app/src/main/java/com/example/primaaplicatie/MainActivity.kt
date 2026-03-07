@@ -11,6 +11,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.primaaplicatie.session4.BoxImageText
+import com.example.primaaplicatie.session4.CircleShaper
+import com.example.primaaplicatie.session4.GreetingCard
+import com.example.primaaplicatie.session4.IconTextRow
+import com.example.primaaplicatie.session4.InteractiveButton
+import com.example.primaaplicatie.session4.LogButton
+import com.example.primaaplicatie.session4.ProfileCard
+import com.example.primaaplicatie.session4.ScrollableList
+import com.example.primaaplicatie.session4.TextCollumn
 import com.example.primaaplicatie.ui.theme.PrimaAplicatieTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,14 +27,25 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            PrimaAplicatieTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+
+            //GreetingCard(name = "Dionisie")
+
+            //LogButton()
+
+            //IconTextRow()
+
+            //TextCollumn()
+
+            //(uncomment for a silly cat)
+            //BoxImageText()
+
+            //CircleShaper()
+
+            //InteractiveButton()
+
+            //ScrollableList()
+
+            ProfileCard()
         }
     }
 }
