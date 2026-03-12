@@ -20,6 +20,15 @@ import com.example.primaaplicatie.session4.LogButton
 import com.example.primaaplicatie.session4.ProfileCard
 import com.example.primaaplicatie.session4.ScrollableList
 import com.example.primaaplicatie.session4.TextCollumn
+import com.example.primaaplicatie.session5.BrokenCheckbox
+import com.example.primaaplicatie.session5.HoistingParent
+import com.example.primaaplicatie.session5.LaunchedEffectTask
+import com.example.primaaplicatie.session5.LightSwitch
+import com.example.primaaplicatie.session5.SaveableTask
+import com.example.primaaplicatie.session5.ScrollButton
+import com.example.primaaplicatie.session5.TextFieldTask
+import com.example.primaaplicatie.session5.ValidationTask
+import com.example.primaaplicatie.session5.WorkingCheckbox
 import com.example.primaaplicatie.ui.theme.PrimaAplicatieTheme
 
 class MainActivity : ComponentActivity() {
@@ -45,7 +54,27 @@ class MainActivity : ComponentActivity() {
 
             //ScrollableList()
 
-            ProfileCard()
+            //ProfileCard()
+
+            //Homework for Session 5 starts here!
+
+            //BrokenCheckbox()
+
+            //WorkingCheckbox()
+
+            //TextFieldTask()
+
+            //HoistingParent()
+
+            //ValidationTask()
+
+            //LightSwitch()
+
+            //SaveableTask()
+
+            //ScrollButton()
+
+            //LaunchedEffectTask()
         }
     }
 }
