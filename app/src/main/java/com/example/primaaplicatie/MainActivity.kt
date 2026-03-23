@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
 
             //LaunchedEffectTask()
 
-            AppNavigation()
+            //AppNavigation()
         }
     }
 }
