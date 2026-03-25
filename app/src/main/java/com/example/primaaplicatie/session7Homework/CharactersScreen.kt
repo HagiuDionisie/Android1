@@ -3,6 +3,7 @@ package com.example.primaaplicatie.session7Homework
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -10,6 +11,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil3.compose.AsyncImage
@@ -33,10 +36,13 @@ fun CharactersScreen(viewModel: CharactersViewModel = viewModel()) {
             }
 
             is UiState.Success -> {
-                val characters = (state as UiState.Success).data
+                val characters = state.data
 
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    items(characters) { character ->
+                    items(
+                        items = characters,
+                        key = { character -> character.id }
+                    ) { character ->
                         CharacterItem(character = character)
                     }
                 }
@@ -56,7 +62,10 @@ fun CharacterItem(character: Character) {
         AsyncImage(
             model = character.imageUrl,
             contentDescription = character.name,
-            modifier = Modifier.size(64.dp)
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .size(64.dp)
+                .clip(CircleShape)
         )
 
         Spacer(modifier = Modifier.width(16.dp))

@@ -2,8 +2,6 @@ package com.example.primaaplicatie.session7Homework
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.primaaplicatie.session7Homework.RetrofitInstance
-import com.example.primaaplicatie.session7Homework.UiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
