@@ -36,7 +36,7 @@ fun CharactersScreen(viewModel: CharactersViewModel = viewModel()) {
             }
 
             is UiState.Success -> {
-                val characters = state.data
+                val characters = (state as UiState.Success).data
 
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     items(
