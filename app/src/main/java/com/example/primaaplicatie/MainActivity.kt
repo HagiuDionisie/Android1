@@ -29,7 +29,7 @@ import com.example.primaaplicatie.session5.ScrollButton
 import com.example.primaaplicatie.session5.TextFieldTask
 import com.example.primaaplicatie.session5.ValidationTask
 import com.example.primaaplicatie.session5.WorkingCheckbox
-import com.example.primaaplicatie.session6.AppNavigation
+import com.example.primaaplicatie.session7Homework.CharactersScreen
 import com.example.primaaplicatie.ui.theme.PrimaAplicatieTheme
 
 class MainActivity : ComponentActivity() {
@@ -77,7 +77,9 @@ class MainActivity : ComponentActivity() {
 
             //LaunchedEffectTask()
 
-            AppNavigation()
+            CharactersScreen()
+
+            //AppNavigation()
         }
     }
 }
